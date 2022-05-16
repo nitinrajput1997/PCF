@@ -58,3 +58,35 @@ iii) Packet Flow Description
 
 Whenever the PCF make decisions, it usually cold PCC rules or policy and charging control rule. But this rule cannot send directly into the network. So the PCC rule are send by the PCF to SMF and SMF uses it to enforce different kind of behavior across the network. It takes the PCC rules and identifies what should be the SDF or service dataflow template that SMF should send to you UPF. What does upf need don't know. It need to know how it can differentiate with the different service running on the network example it needs to differentiate between the IP packet from applications like Spotify, ah IP packet from You Tube, IP packet from Internet browsing. On the other hand gNB, needs to know quality of service profile which helps gNB to put the different quality of service flow in the right radio bearers in the wireless network. When the traffic is available, the UE need the guidance on what uplink barrier to use to send the different application traffic so this one governs by the quality of service rules.
 
+**PCF Services**
+
+i) Npcf_AMPolicyControl
+
+	It provides AMF with policy information about the UE or provides the access and mobility related policy information to the UE. In addition, it also provide access selection policy, which dictates that which radio access technology should get priority in a given context. It also have different service operation such as 
+	
+- Create: creates association of AMF and PCF for a particular device.
+
+- Update: When that association receives an update it was handled here turn. 
+
+- Notify: It can be used by PCF when there is no request from the AMF. At anytime PCF use this to update policies in AMF.
+
+- Delete: To delete the association corresponding to the device for the AMF.
+
+ii) Npcf_SMPolicyControl
+	It provides the SMF with policy related information to corresponding PDU session. It also have service operations such as
+
+- Create: To create associtaion corresponding to particular PDU session used for PCF registration.
+
+- Notify: If there is any policy cahnge to related PDU session, then the SMF will be notified by PCF.
+
+- Update: To update that association or update notify by the PCF when there is no request.
+
+- Delete: To delete the association corresponding to particular PDU session.
+
+iii) Npcf_PolicyAuthentication
+
+This is used to authorize an application function request and to create policies as requested by the authorized application function for the PDU session for which the application function session is bound.
+
+iv) Npcf_BDTPolicy
+
+To get the background data transfer policies based on the request via NEF from the application function. It updates the background data transfer policies on selection provided by application function.
