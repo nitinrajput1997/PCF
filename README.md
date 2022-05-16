@@ -29,22 +29,19 @@ i) Access and Mobility Related Policy
 	If a device or a user is allowed to access 5G system in certain geographical areas and not in others it is allowed to access certain kind of service in some low graphical areas and not others. This is called as service area restriction.
 
    - RAT/frequency selection priority
- 
-	When a device is accessing a 5G system, it can be seen that the 5G is available over multiple frequency bands in such situation, the device need a guidance on which is the highest priority frequency to access. This way, the operator choosing the frequency that is expected to provide the best performance will be, what the device will choose as preferred frequency.
+ When a device is accessing a 5G system, it can be seen that the 5G is available over multiple frequency bands in such situation, the device need a guidance on which is the highest priority frequency to access. This way, the operator choosing the frequency that is expected to provide the best performance will be, what the device will choose as preferred frequency.
 
 ii) Policies to the UE
     
     - UE Route Selection Policy
-    
-	Suppose a device is connected to a 5G system and has ongoing PDU session. Now, if a user opens his new application say YouTube and want to stream videos. Now the device has to decide, if existing PDU session can be used for YouTube or if it should create a new PDU session. To help the decision like this, we have UE Route Selection Policy.
+    	Suppose a device is connected to a 5G system and has ongoing PDU session. Now, if a user opens his new application say YouTube and want to stream videos. Now the device has to decide, if existing PDU session can be used for YouTube or if it should create a new PDU session. To help the decision like this, we have UE Route Selection Policy.
 
     - Access Network Discovery and Selection Policy
-    
-	In some scenario, Wi-Fi network is used to support 5G connectivity where the 5G coverage is sometimes poor. Suppose there might be a case where the devices sees multiple Wi-Fi network available. Then there should be some sense of priority in locating the Wi-Fi network and choose the right access network. This policy will help to choose the right Wi-Fi network in a given situation.
+    In some scenario, Wi-Fi network is used to support 5G connectivity where the 5G coverage is sometimes poor. Suppose there might be a case where the devices sees multiple Wi-Fi network available. Then there should be some sense of priority in locating the Wi-Fi network and choose the right access network. This policy will help to choose the right Wi-Fi network in a given situation.
 
 iii) Packet Flow Description
 
-     It refers to the set of information which helps the network to detect the application traffic. We have seen that in QoS, a multiple application related traffic can be carried from data network to gNodeB. But not all the application has to be treated the same way. Example if operator has an agreement that if you stream music through specific music stream service then they don't charge you for it that means they won't charge the data it consumes. Then we need a policy that will make the UPF, not to measure the amount of data concerning that particular application. So we need packet flow descriptor, that will help the UPF to understand what kind of characteristic will describe a particular application.
+It refers to the set of information which helps the network to detect the application traffic. We have seen that in QoS, a multiple application related traffic can be carried from data network to gNodeB. But not all the application has to be treated the same way. Example if operator has an agreement that if you stream music through specific music stream service then they don't charge you for it that means they won't charge the data it consumes. Then we need a policy that will make the UPF, not to measure the amount of data concerning that particular application. So we need packet flow descriptor, that will help the UPF to understand what kind of characteristic will describe a particular application.
 
 **Session Management Related Policies**
 
