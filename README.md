@@ -25,19 +25,19 @@ When the policy are related to user specific are known as non session related po
 
 i) Access and Mobility Related Policy
    
-   - Service Area Restriction
-	If a device or a user is allowed to access 5G system in certain geographical areas and not in others it is allowed to access certain kind of service in some low graphical areas and not others. This is called as service area restriction.
+- Service Area Restriction
+If a device or a user is allowed to access 5G system in certain geographical areas and not in others it is allowed to access certain kind of service in some low graphical areas and not others. This is called as service area restriction.
 
-   - RAT/frequency selection priority
- When a device is accessing a 5G system, it can be seen that the 5G is available over multiple frequency bands in such situation, the device need a guidance on which is the highest priority frequency to access. This way, the operator choosing the frequency that is expected to provide the best performance will be, what the device will choose as preferred frequency.
+- RAT/frequency selection priority
+When a device is accessing a 5G system, it can be seen that the 5G is available over multiple frequency bands in such situation, the device need a guidance on which is the highest priority frequency to access. This way, the operator choosing the frequency that is expected to provide the best performance will be, what the device will choose as preferred frequency.
 
 ii) Policies to the UE
     
-    - UE Route Selection Policy
-    	Suppose a device is connected to a 5G system and has ongoing PDU session. Now, if a user opens his new application say YouTube and want to stream videos. Now the device has to decide, if existing PDU session can be used for YouTube or if it should create a new PDU session. To help the decision like this, we have UE Route Selection Policy.
+- UE Route Selection Policy
+Suppose a device is connected to a 5G system and has ongoing PDU session. Now, if a user opens his new application say YouTube and want to stream videos. Now the device has to decide, if existing PDU session can be used for YouTube or if it should create a new PDU session. To help the decision like this, we have UE Route Selection Policy.
 
-    - Access Network Discovery and Selection Policy
-    In some scenario, Wi-Fi network is used to support 5G connectivity where the 5G coverage is sometimes poor. Suppose there might be a case where the devices sees multiple Wi-Fi network available. Then there should be some sense of priority in locating the Wi-Fi network and choose the right access network. This policy will help to choose the right Wi-Fi network in a given situation.
+- Access Network Discovery and Selection Policy
+In some scenario, Wi-Fi network is used to support 5G connectivity where the 5G coverage is sometimes poor. Suppose there might be a case where the devices sees multiple Wi-Fi network available. Then there should be some sense of priority in locating the Wi-Fi network and choose the right access network. This policy will help to choose the right Wi-Fi network in a given situation.
 
 iii) Packet Flow Description
 
@@ -45,11 +45,11 @@ It refers to the set of information which helps the network to detect the applic
 
 **Session Management Related Policies**
 
-    - Gating Control
-	vanna this type of policies are used to block or allows IP packets of certain service . Example in some countries torrent are block, so all the IP packets that corresponding to P2P targeting is blocked.
+- Gating Control
+This type of policies are used to block or allows IP packets of certain service . Example in some countries torrent are block, so all the IP packets that corresponding to P2P targeting is blocked.
 
-    - Quality of Service Control
-	There might a case where not all the application are allowed to be treated in the same manner. Some have higher priorities and some have lower priorities. This is defined by the QoS control, where the QoS policies define the quality of particular authorized service should get.
+- Quality of Service Control
+There might a case where not all the application are allowed to be treated in the same manner. Some have higher priorities and some have lower priorities. This is defined by the QoS control, where the QoS policies define the quality of particular authorized service should get.
 
 **Policy Flows**
 
